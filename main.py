@@ -4,7 +4,7 @@ from discord import app_commands
 import os
 import traceback
 
-TOKEN = "MTUyNDAxNDkwNTcwNjAyNTA4Mg.GY7gBi.TIgeykWeciOONo0aLNhafApKbQmdtyTQ0kibOE"
+TOKEN = "MTUyNDAxNDkwNTcwNjAyNTA4Mg.GAUHor.nny_icz1PmZFsNaaurD-OcfT-e13tTdFUWfqXU"
 
 intents = discord.Intents.all()
 bot = commands.Bot(
