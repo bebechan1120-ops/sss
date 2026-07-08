@@ -160,10 +160,10 @@ class InviteCog(commands.Cog):
                     ) + 1
                 )
 
- save_data(data)
+       save_data(data)
 
-break
-
+       break
+ 
 
 @app_commands.command(
         name="招待パネル作成",
