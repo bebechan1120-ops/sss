@@ -172,7 +172,7 @@ break
 @app_commands.describe(
         message="パネルに表示する文章"
     )
-    async def invite_panel(
+async def invite_panel(
         self,
         interaction: discord.Interaction,
         message: str
