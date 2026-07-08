@@ -89,7 +89,7 @@ class InviteView(discord.ui.View):
             f"📊 あなたの招待数\n\n{count}人",
             ephemeral=True
         )
-          class InviteCog(commands.Cog):
+class InviteCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.invites = {}
