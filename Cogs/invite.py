@@ -205,7 +205,7 @@ async def invite_panel(
         )
 
 
-    @app_commands.command(
+@app_commands.command(
         name="招待ランキング",
         description="招待数ランキングを表示します"
     )
