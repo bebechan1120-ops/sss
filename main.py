@@ -45,7 +45,7 @@ async def on_ready():
 
     await bot.change_presence(
         activity=discord.Game(
-            name=f"{guild_count}サーバー / {member_count}人"
+            name=f"{guild_count}servers / {member_count}menbers"
         )
     )
 
