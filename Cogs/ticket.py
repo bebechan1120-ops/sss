@@ -92,7 +92,7 @@ class TicketView(discord.ui.View):
             f"作成しました: {channel.mention}",
             ephemeral=True
         )
-      class CloseTicketView(discord.ui.View):
+class CloseTicketView(discord.ui.View):
     def __init__(self):
         super().__init__(timeout=None)
 
@@ -218,5 +218,5 @@ class TicketCog(commands.Cog):
             "チケットパネルを作成しました。",
             ephemeral=True
         )
-      async def setup(bot):
+async def setup(bot):
     await bot.add_cog(TicketCog(bot))
