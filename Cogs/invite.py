@@ -169,7 +169,7 @@ break
         name="招待パネル作成",
         description="招待パネルを作成します"
     )
-    @app_commands.describe(
+@app_commands.describe(
         message="パネルに表示する文章"
     )
     async def invite_panel(
