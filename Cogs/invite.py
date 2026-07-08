@@ -209,7 +209,7 @@ async def invite_panel(
         name="招待ランキング",
         description="招待数ランキングを表示します"
     )
-    async def invite_rank(
+async def invite_rank(
         self,
         interaction: discord.Interaction
     ):
