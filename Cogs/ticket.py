@@ -94,13 +94,13 @@ class TicketView(discord.ui.View):
 
 embed.set_footer(text="Developer @anzy1m")
 
-        await channel.send(
+await channel.send(
     f"{interaction.user.mention} <@1522560755856183298> <@&1523697519090208778>",
     embed=embed,
     view=CloseTicketView()
 )
 
-        await interaction.response.send_message(
+await interaction.response.send_message(
             f"作成しました: {channel.mention}",
             ephemeral=True
         )
