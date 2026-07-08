@@ -5,7 +5,6 @@ import os
 import traceback
 
 TOKEN = os.getenv("TOKEN")
-bot.run(TOKEN)
 
 intents = discord.Intents.all()
 bot = commands.Bot(
