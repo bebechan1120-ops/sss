@@ -4,7 +4,8 @@ from discord import app_commands
 import os
 import traceback
 
-TOKEN = "ここにとーくん"
+TOKEN = os.getenv("TOKEN")
+bot.run(TOKEN)
 
 intents = discord.Intents.all()
 bot = commands.Bot(
