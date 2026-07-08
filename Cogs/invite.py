@@ -162,7 +162,7 @@ class InviteCog(commands.Cog):
 
 save_data(data)
 
-       break
+break
  
 
 @app_commands.command(
