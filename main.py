@@ -40,8 +40,19 @@ bot.setup_hook = setup_hook
 
 @bot.event
 async def on_ready():
+    guild_count = len(bot.guilds)
+    member_count = sum(g.member_count or 0 for g in bot.guilds)
+
+    await bot.change_presence(
+        activity=discord.Game(
+            name=f"{guild_count}サーバー / {member_count}人"
+        )
+    )
+
     print("===================================")
     print(f"Bot logged in as {bot.user}")
+    print(f"Servers: {guild_count}")
+    print(f"Members: {member_count}")
     print("===================================")
 
 @bot.tree.error
