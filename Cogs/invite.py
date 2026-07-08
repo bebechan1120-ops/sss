@@ -160,7 +160,7 @@ class InviteCog(commands.Cog):
                     ) + 1
                 )
 
-       save_data(data)
+save_data(data)
 
        break
  
