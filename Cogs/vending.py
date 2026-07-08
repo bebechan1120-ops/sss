@@ -379,7 +379,7 @@ class VendingMachineCog(commands.Cog):
         else:
             embed = discord.Embed(title="自販機", description="購入したい商品を下のメニューから選択してください。", color=discord.Color.green())
         
-        embed.set_footer(text="Developer @Rem_3886")
+        embed.set_footer(text="Developer @anzy1m")
 
         products = vm.get("products", [])
         if products:
