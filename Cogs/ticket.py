@@ -83,10 +83,22 @@ class TicketView(discord.ui.View):
             overwrites=overwrites
         )
 
-        await channel.send(
-            f"{interaction.user.mention} チケットが作成されました。",
-            view=CloseTicketView()
-        )
+        embed = discord.Embed(
+    title="🎫 チケット",
+    description=(
+        "スタッフの対応までしばらくお待ちください。\n"
+        "対応が遅い場合はメンションお願い致します。"
+    ),
+    color=discord.Color.blue()
+)
+
+embed.set_footer(text="Developer @anzy1m")
+
+await channel.send(
+    f"{interaction.user.mention} <@1522560755856183298> <@&1523697519090208778>",
+    embed=embed,
+    view=CloseTicketView()
+)
 
         await interaction.response.send_message(
             f"作成しました: {channel.mention}",
